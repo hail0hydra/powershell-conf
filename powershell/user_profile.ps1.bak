@@ -1,0 +1,36 @@
+# Wall
+# Write-Host "Type 'Import-Module posh-git' to get git support" -fore blue
+
+echo ""
+
+# Imports
+Import-Module posh-git
+# Import-Module oh-my-posh
+Import-Module PSReadline
+Import-Module Terminal-Icons
+
+# oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\takuya.omp.json" | Invoke-Expression
+# oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\M365Princess.omp.json" | Invoke-Expression
+# oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\remk.omp.json" | Invoke-Expression
+
+# Sets
+# Set-PSReadLineOption -EditMode Emacs
+# Set-PSReadLineOption -BellStyle None
+# Set-PSReadLineKeyHandler -Chord 'Ctrl+d'  -Function DeleteChar
+Set-PSReadLineOption -PredictionSource History
+Set-PSReadlineOption -PredictionViewStyle List
+
+# Alias
+Set-Alias vim nvim
+# Set-Alias gcc 'C:\Users\avina\scoop\apps\gcc\current\bin\gcc.exe -g -Wall'
+Set-Alias grep findstr
+Set-Alias less 'C:\Program Files\Git\usr\bin\less.exe'
+
+# Removing Dir color
+# $PSStyle.FileInfo.Directory = ""
+
+# Utilities
+function which ($command) {
+	Get-Command -Name $command -ErrorAction SilentlyContinue |
+	  Select-Object -ExpandProperty Path -ErrorAction SilentlyContinue
+}

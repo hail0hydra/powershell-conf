@@ -6,6 +6,8 @@ Write-Host "daily reminder :  use ffuf " -fore green
 
 oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\tonybaloney.omp.json" | Invoke-Expression
 
+# current is larserikfinholt.omp.json 
+
 echo ""
 # Import-Module posh-git
 

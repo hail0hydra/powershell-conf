@@ -29,7 +29,7 @@
 <br>
 <br>
 
-- replace the `$env:USERPROFILE\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json` with [this](.\settings.json)
+- replace the `$env:USERPROFILE\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json` with [this](./settings.json)
 
     - the __id__ in `WindowsTerminal_xxxxxxxx` can be anything depending upon terminal version.
 
@@ -42,7 +42,7 @@
 
     2. ___ctrl+shift+o___ - split pane horizontally
 
-- Added some colors (already in [this](.\settings.json))
+- Added some colors (already in [this](./settings.json))
 
 
 
